@@ -6,8 +6,6 @@
         <button class="buttonLeft"><a href="#">Explore recent Work</a></button>
         <button class="buttonRight"><a href="#">Get a quote today</a></button>
       </div>
-      
-
     </section>
 </template>
 
@@ -49,10 +47,11 @@ section{
 }
 
 .buttons{
+  margin-top: 40px;
   display: flex;
   button{
     border: none;
-    padding: 10px 20px;
+    padding: 10px 80px;
     margin: 5px;
   }
   .buttonLeft{

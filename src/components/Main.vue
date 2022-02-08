@@ -2,6 +2,7 @@
 <main>
   <HomeSlider/>
   <TextUnderSlider/>
+  <SpeciaList/>
   
 </main>
  
@@ -10,6 +11,7 @@
 <script>
 import HomeSlider from './section/HomeSlider.vue'
 import TextUnderSlider from './section/TextUnderSlider.vue'
+import SpeciaList from './section/SpeciaList.vue'
 export default {
   name: 'Main',
   props: {
@@ -17,7 +19,8 @@ export default {
     },
   components:{
     HomeSlider,
-    TextUnderSlider
+    TextUnderSlider,
+    SpeciaList
   }
 }
 </script>
