@@ -26,6 +26,23 @@
           <p>Quis autem vel eum iure reprodent qui in ea voluptate velit esse quam nihit molestiae consequatu</p>
         </div>
       </div>
+      <div class="imgContainer">
+        <div class="bendTop"></div>
+        <div class="containerNumbers">
+          <div>
+            <div><i class="fas fa-suitcase"></i></div>
+            <div>3534</div>
+            <h6>planning Applications</h6>
+          </div>
+           <div>
+            <div><i class="far fa-building"></i></div>
+            <div>896</div>
+            <h6>planning Applications</h6>
+          </div>
+
+        </div>
+        <div class="bendBottom"></div>
+      </div>
     </section>
 </template>
 
@@ -105,6 +122,37 @@ h3{
   }
   p{
     text-align: center;
+  }
+}
+
+.imgContainer{
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background-image: url('../../assets/img/home-244125289.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .bendTop{
+    background-color: $white;
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 120px;
+    border: 1px solid white;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+  }
+  .bendBottom{
+    background-color: $white;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 120px;
+    border: 1px solid white;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+
   }
 }
 
