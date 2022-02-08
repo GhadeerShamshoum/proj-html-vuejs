@@ -31,7 +31,6 @@ header{
     display: flex;
     justify-content: center;
     .container{
-        width: 1200px;
         display: flex;
         justify-content: space-between;
         align-items: center;

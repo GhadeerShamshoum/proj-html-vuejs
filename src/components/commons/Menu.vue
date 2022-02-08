@@ -67,7 +67,6 @@ menu{
     margin: 0;
     li{
       margin: 10px; 
-        text-transform:uppercase;
         a{
           color:$doveGray; 
           &:hover{
