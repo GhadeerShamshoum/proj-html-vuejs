@@ -4,6 +4,7 @@
         <div class="textUnderSlider">
           do you have a construction project we can help with?
         </div>
+         <button class="buttonCenter"><a href="#">Get a free quote</a></button>
       </div>
     </section>
 </template>
@@ -31,9 +32,20 @@ export default {
   justify-content: center;
   align-items: center;
   background-color: $brightSun;
+  position: relative;
   .textUnderSlider{
     text-transform: capitalize;
     letter-spacing: 0.1em;
+  }
+  button{
+    position: absolute;
+    bottom:-15px;
+    border: 1px solid white;
+    background-color: $LimedSpruce;
+    padding: 5px 10px;
+    a{
+      color: $white;
+    }
   }
 }
 
