@@ -3,6 +3,7 @@
   <HomeSlider/>
   <TextUnderSlider/>
   <SpeciaList/>
+  <EploreRecentWork/>
   
 </main>
  
@@ -12,6 +13,7 @@
 import HomeSlider from './section/HomeSlider.vue'
 import TextUnderSlider from './section/TextUnderSlider.vue'
 import SpeciaList from './section/SpeciaList.vue'
+import EploreRecentWork from './section/EploreRecentWork.vue'
 export default {
   name: 'Main',
   props: {
@@ -20,7 +22,8 @@ export default {
   components:{
     HomeSlider,
     TextUnderSlider,
-    SpeciaList
+    SpeciaList,
+    EploreRecentWork
   }
 }
 </script>
