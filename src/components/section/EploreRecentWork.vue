@@ -31,7 +31,7 @@
 
 <script>
 import OurCoreBottom from '../commons/OurCoreBottom.vue'
-import OurCoreImg from './OurCoreImg.vue'
+import OurCoreImg from '../commons/OurCoreImg.vue'
 
 export default {
   name: 'EploreRecentWork',
