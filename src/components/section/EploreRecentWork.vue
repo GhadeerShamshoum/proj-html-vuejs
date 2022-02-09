@@ -6,20 +6,44 @@
       </div>
       <div class="containerPics">
         <div class="listContainer">
-          <img src="../../assets/img/project1-featured-294276386.jpg" alt="">   
+          <img src="../../assets/img/project2-featured-15013609.jpg" alt="">   
         </div>
         <div class="listContainer">
-          <img src="../../assets/img/project2-featured-15013609.jpg" alt="">   
+          <img src="../../assets/img/project1-featured-294276386.jpg" alt="">   
         </div>
         <div class="listContainer">
           <img src="../../assets/img/project3-featured-189023420.jpg" alt="">   
         </div> 
       </div>
-      <div>View all projects</div>   
+      <div class="viewAllPro">View all projects</div>   
       <div class="ourCoreValues">
         <h3>our core values</h3>
         <div class="textContainer">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptate amet suscipit architecto libero, placeat dolor iusto voluptates voluptatum labore esse voluptatem ea quisquam repellendus aliquid consequatur, error vero alias?</p>
+        </div>
+        
+        <!-- Our Core Bottom -->
+        <div class="ourCoreBottom">
+           <div class="cardBottom">
+            <div class="coloredIcon"><i class="fas fa-home"></i></div>
+            <title>Great Services</title>
+            <p>Neque porro quisquam est. qui dolorem ipsum quia dolor sit amet. consectetur, adipisci velit, sed quia</p>
+          </div>
+           <div class="cardBottom">
+            <div class="coloredIcon"><i class="far fa-cog"></i></div>
+            <title>Great Services</title>
+            <p>Neque porro quisquam est. qui dolorem ipsum quia dolor sit amet. consectetur, adipisci velit, sed quia</p>
+          </div>
+          <div class="cardBottom">
+            <div class="coloredIcon"><i class="fas fa-users"></i></div>
+            <title>Great Services</title>
+            <p>Neque porro quisquam est. qui dolorem ipsum quia dolor sit amet. consectetur, adipisci velit, sed quia</p>
+          </div>
+          <div class="cardBottom">
+            <div class="coloredIcon"><i class="far fa-lightbulb"></i></div>
+            <title>Great Services</title>
+            <p>Neque porro quisquam est. qui dolorem ipsum quia dolor sit amet. consectetur, adipisci velit, sed quia</p>
+          </div>
         </div>
 
       </div>
@@ -62,7 +86,6 @@ export default {
 <style scoped lang="scss">
 @import "../../assets/style/variabiles.scss";
 section{
-  padding: 40px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,6 +116,32 @@ h3{
   }
 }
 
+.viewAllPro{
+  position: relative;
+  text-transform: uppercase;
+  color:$doveGray;
+  letter-spacing: 0.1rem;
+  font-size: 15px;
+  margin:60px 0;
+}
+
+.viewAllPro::before{
+  content: '';
+  position: absolute;
+  left: 188px;
+  top:50%;
+  width: 393px;
+  border: 1px solid $lightGray;
+}
+.viewAllPro::after{
+  content: '';
+  position: absolute;
+  right: 188px;
+  top:50%;
+  width: 393px;
+  border: 1px solid $lightGray;
+}
+
 .ourCoreValues{
   background-color: #eeeded;
   height: 500px;
@@ -110,7 +159,7 @@ h3{
   display: flex;
   .listContainer{
     width: calc(100% / 3 - 10px);
-    height: 500px;
+    height: 310px;
     margin: 5px;
     display: flex;
     flex-direction: column;
@@ -122,11 +171,33 @@ h3{
     }
   }
 }
+
+.ourCoreBottom{
+  width: 1000px;
+  display: flex;
+
+  .cardBottom{
+    width: calc(100% / 4 - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+}
+.coloredIcon{
+  background-color: #4EA4A5;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .imgContainer{
   width: 100%;
   height: 600px;
   position: relative;
-  background-image: url('../../assets/img/home-244125289.jpg');
+  background-image: url('../../assets/img/home-parallax-144609983.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
