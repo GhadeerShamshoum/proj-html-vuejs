@@ -23,51 +23,15 @@
         </div>
         
         <!-- Our Core Bottom -->
-        <div class="ourCoreBottom">
-           <div class="cardBottom">
-            <div class="coloredIcon"><i class="fas fa-home"></i></div>
-            <title>Great Services</title>
-            <p>Neque porro quisquam est. qui dolorem ipsum quia dolor sit amet. consectetur, adipisci velit, sed quia</p>
-          </div>
-           <div class="cardBottom">
-            <div class="coloredIcon"><i class="far fa-cog"></i></div>
-            <title>Great Services</title>
-            <p>Neque porro quisquam est. qui dolorem ipsum quia dolor sit amet. consectetur, adipisci velit, sed quia</p>
-          </div>
-          <div class="cardBottom">
-            <div class="coloredIcon"><i class="fas fa-users"></i></div>
-            <title>Great Services</title>
-            <p>Neque porro quisquam est. qui dolorem ipsum quia dolor sit amet. consectetur, adipisci velit, sed quia</p>
-          </div>
-          <div class="cardBottom">
-            <div class="coloredIcon"><i class="far fa-lightbulb"></i></div>
-            <title>Great Services</title>
-            <p>Neque porro quisquam est. qui dolorem ipsum quia dolor sit amet. consectetur, adipisci velit, sed quia</p>
-          </div>
-        </div>
-
+      <OurCoreBottom/> 
       </div>
-      <div class="imgContainer">
-        <div class="bendTop"></div>
-        <div class="containerNumbers">
-          <div>
-            <div><i class="fas fa-suitcase"></i></div>
-            <div>3534</div>
-            <h6>planning Applications</h6>
-          </div>
-           <div>
-            <div><i class="far fa-building"></i></div>
-            <div>896</div>
-            <h6>planning Applications</h6>
-          </div>
-
-        </div>
-        <div class="bendBottom"></div>
-      </div>
+      <OurCoreImg/>
     </section>
 </template>
 
 <script>
+import OurCoreBottom from '../commons/OurCoreBottom.vue'
+import OurCoreImg from './OurCoreImg.vue'
 
 export default {
   name: 'EploreRecentWork',
@@ -77,6 +41,10 @@ export default {
   props: {
     
   },
+  components:{
+    OurCoreBottom,
+    OurCoreImg
+  }
   
 
 }
@@ -171,62 +139,5 @@ h3{
     }
   }
 }
-
-.ourCoreBottom{
-  width: 1000px;
-  display: flex;
-
-  .cardBottom{
-    width: calc(100% / 4 - 10px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-  }
-}
-.coloredIcon{
-  background-color: #4EA4A5;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.imgContainer{
-  width: 100%;
-  height: 600px;
-  position: relative;
-  background-image: url('../../assets/img/home-parallax-144609983.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  .bendTop{
-    background-color: #eeeded;
-    position: absolute;
-    top:0;
-    width: 100%;
-    height: 120px;
-    border: 1px solid #eeeded;
-    border-bottom-right-radius: 100%;
-    border-bottom-left-radius: 100%;
-  }
-  .bendBottom{
-    background-color: $white;
-    position: absolute;
-    bottom:0;
-    width: 100%;
-    height: 120px;
-    border: 1px solid white;
-    border-top-right-radius: 100%;
-    border-top-left-radius: 100%;
-
-  }
-}
-
-
-
-
-
 
 </style>
