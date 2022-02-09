@@ -89,12 +89,12 @@ export default {
     border-bottom-left-radius: 100%;
   }
   .bendBottom{
-    background-color: $white;
+    background-color: #eeeded;
     position: absolute;
     bottom:0;
     width: 100%;
     height: 120px;
-    border: 1px solid white;
+    border: 1px solid #eeeded;
     border-top-right-radius: 100%;
     border-top-left-radius: 100%;
 
