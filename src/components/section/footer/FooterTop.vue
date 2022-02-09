@@ -3,19 +3,21 @@
   <FooterTopBackground/>
   
   
+  
 </div>
  
 </template>
 
 <script>
 import FooterTopBackground from '../../commons/footer/FooterTopBackground.vue'
+
 export default {
   name: 'FooterTop',
   props: {
     
   },
   components:{
-    FooterTopBackground
+    FooterTopBackground,
   }
 }
 </script>

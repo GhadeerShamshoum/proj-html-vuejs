@@ -2,6 +2,7 @@
 <div class="imageContainerF"> 
   <div class="firstLayer">
     <img src="../../../assets/img/footer/about-call-to-action-57862405.jpg" alt="">
+    <FooterTopItems/>
   </div>
   <div class="secondLayer">
     <img class="secondLaterImg" src="../../../assets/img/footer/about-call-to-action-57862405.jpg" alt="">
@@ -11,10 +12,14 @@
 </template>
 
 <script>
+import FooterTopItems from './FooterTopItems.vue'
 export default {
   name: 'FooterTopBackground',
   props: {
     
+  },
+  components:{
+    FooterTopItems
   }
 }
 </script>
@@ -22,6 +27,7 @@ export default {
 
 <style scoped lang="scss">
 .imageContainerF{
+  
   background-color: gray;
   height: 361px;
   .firstLayer{
