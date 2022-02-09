@@ -5,6 +5,8 @@
   <SpeciaList/>
   <EploreRecentWork/>
   <LatestNews/>
+  <TrustedPartner/>
+  
   
 </main>
  
@@ -16,6 +18,7 @@ import TextUnderSlider from './section/TextUnderSlider.vue'
 import SpeciaList from './section/SpeciaList.vue'
 import EploreRecentWork from './section/EploreRecentWork.vue'
 import LatestNews from './section/LatestNews.vue'
+import TrustedPartner from './section/TrustedPartner.vue'
 export default {
   name: 'Main',
   props: {
@@ -26,7 +29,8 @@ export default {
     TextUnderSlider,
     SpeciaList,
     EploreRecentWork,
-    LatestNews
+    LatestNews,
+    TrustedPartner
   }
 }
 </script>
