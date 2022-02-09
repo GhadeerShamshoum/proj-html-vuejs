@@ -63,7 +63,7 @@ h3{
   font-weight: 300;
   text-transform: capitalize;
   position: relative;
-  padding: 40px 0;
+  padding: 20px 0;
   &::after{
     content: "";
     border-bottom: 2px solid $brightSun;
