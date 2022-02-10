@@ -105,12 +105,27 @@ section{
   }
   .buttonLeft{
     background-color:$LimedSpruce;
+    &:hover{
+      background-color: $brightSun;
+      transition: all .5s linear;
+    }
+    &:hover a{
+      color: $doveGray;
+    }
     a{
       color: $white;
     }
   }
   .buttonRight{
     background-color: $brightSun;
+    &:hover{
+      background-color: $LimedSpruce;
+      transition: all .5s linear;
+    }
+    &:hover a{
+      color: $brightSun;
+    }
+
     a{
       color:$doveGray ;
     }
