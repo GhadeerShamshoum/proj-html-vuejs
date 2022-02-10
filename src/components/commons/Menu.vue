@@ -1,7 +1,7 @@
 <template>
 <menu>
     <ul>
-        <li :class='{show: element.current==true}' v-for="(element, index) in links" :key="index">
+        <li class="listMenu" :class='{visabile: element.current==true}' v-for="(element, index) in links" :key="index">
           <a :class='{active: element.current==true}' href="#">{{element.text}}</a>
         </li>
     </ul>
@@ -67,12 +67,19 @@ menu{
     list-style: none;
     margin: 0;
     height: 100%;
-    li{
+    .listMenu{
       margin: 10px; 
       position: relative;
       display: flex;
       align-items: center;
       height: 100%;
+      cursor: pointer;
+      &:hover a{
+        color:$brightSun;
+      }
+      &:hover::after{
+        visibility: visible;
+      }
       &::after  {
       content:'';
       position: absolute;
@@ -83,17 +90,12 @@ menu{
       background-color: $white;
       transform: rotate(45deg);
       visibility: hidden;
-      }
-      &:hover::after{
-        visibility: visible;
+      z-index: 99;
       }
      
         a{
           color:$doveGray; 
-          li:hover &{
-            color:$brightSun;
-
-          }
+          
         }
     }
   }
@@ -120,8 +122,9 @@ button{
 .active{
     color:$brightSun !important;
 }
-li.show::after{
+.listMenu.visabile::after{
   visibility: visible;
+  z-index: 99;
 
 }
 
