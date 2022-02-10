@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import FirstCurvedImgItems from '../commons/FirstCurvedImgItems.vue'
+import FirstCurvedImgItems from '../../commons/FirstCurvedImgItems.vue'
 
 export default {
   name: 'SpeciaList',
@@ -74,7 +74,7 @@ export default {
 
 
 <style scoped lang="scss">
-@import "../../assets/style/variabiles.scss";
+@import "../../../assets/style/variabiles.scss";
 section{
   padding: 40px 0;
   

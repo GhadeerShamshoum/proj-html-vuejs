@@ -6,7 +6,7 @@
       </div>
       <div class="containerPics">
         <div v-for="(element, index) in images" :key="index" class="listContainer">
-          <img :src="require('../../assets/img/'+element.image+'.jpg') " alt="">  
+          <img :src="require('../../../assets/img/'+element.image+'.jpg') " alt="">  
           <div class="cardHover">
             <div class="hoverItemsCard">
               <div class="searchLink">
@@ -34,8 +34,8 @@
 </template>
 
 <script>
-import OurCoreBottom from '../commons/OurCoreBottom.vue'
-import OurCoreImg from '../commons/OurCoreImg.vue'
+import OurCoreBottom from '../../commons/OurCoreBottom.vue'
+import OurCoreImg from '../../commons/OurCoreImg.vue'
 
 export default {
   name: 'EploreRecentWork',
@@ -69,7 +69,7 @@ export default {
 
 
 <style scoped lang="scss">
-@import "../../assets/style/variabiles.scss";
+@import "../../../assets/style/variabiles.scss";
 section{
   display: flex;
   flex-direction: column;

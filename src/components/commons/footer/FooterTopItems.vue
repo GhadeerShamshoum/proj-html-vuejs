@@ -79,6 +79,13 @@ h3{
     border: none;
     padding: 11px 40px;
     background-color: $brightSun;
+    &:hover{
+    background-color: black;
+    transition: all .5s linear;
+  }
+  &:hover a{
+    color: white;
+  } 
     a{
       letter-spacing: 0.1rem;
       color:$doveGray ;

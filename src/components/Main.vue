@@ -13,11 +13,11 @@
 </template>
 
 <script>
-import HomeSlider from './section/HomeSlider.vue'
-import TextUnderSlider from './section/TextUnderSlider.vue'
-import SpeciaList from './section/SpeciaList.vue'
-import EploreRecentWork from './section/EploreRecentWork.vue'
-import LatestNews from './section/LatestNews.vue'
+import HomeSlider from './section/main/HomeSlider.vue'
+import TextUnderSlider from './section/main/TextUnderSlider.vue'
+import SpeciaList from './section/main/SpeciaList.vue'
+import EploreRecentWork from './section/main/EploreRecentWork.vue'
+import LatestNews from './section/main/LatestNews.vue'
 import TrustedPartner from './section/TrustedPartner.vue'
 export default {
   name: 'Main',

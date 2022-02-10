@@ -38,10 +38,10 @@ export default {
 
 
 <style scoped lang="scss">
-@import "../../assets/style/variabiles.scss";
+@import "../../../assets/style/variabiles.scss";
 section{
     height: 1000px;
-    background-image: url('../../assets/img/home-slider-62528242.jpg');
+    background-image: url('../../../assets/img/home-slider-62528242.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

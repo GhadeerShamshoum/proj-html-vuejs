@@ -7,7 +7,7 @@
       <div class="containerItems">
           <div v-for="(element, index) in lastnews" :key="index" class="card">
               <div class="imageContainer">
-                <img :src="require('../../assets/img/blog/'+element.image+'.jpg') " alt="">
+                <img :src="require('../../../assets/img/blog/'+element.image+'.jpg') " alt="">
               <div class="hoverCrad">
                 <div class="hoverItemsCard">
                   <div class="searchLink">
@@ -74,7 +74,7 @@ export default {
 
 
 <style scoped lang="scss">
-@import "../../assets/style/variabiles.scss";
+@import "../../../assets/style/variabiles.scss";
 section{
   background-color: #eeeded;
   display: flex;
@@ -115,6 +115,7 @@ h3{
         position: relative;
         &:hover .hoverCrad{
           display: block;
+          transition: all .8s linear;
         }
          .hoverCrad{
             position: absolute;

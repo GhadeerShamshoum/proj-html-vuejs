@@ -46,8 +46,10 @@
         </li>
       </ul>
     </div>
-    <div class="findUs">
+    <div class="item">
       <h6>Find Us</h6>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1462.24648197357!2d7.363545492403385!3d46.22330913400479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478edc21a87f0d07%3A0xb3c8d65b537d6d93!2sAvada%20Construction%20%E2%80%93%20Un%20nuovo%20sito%20targato%20WordPress!5e0!3m2!1sit!2sit!4v1644501399919!5m2!1sit!2sit" 
+      width="280" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
   </div>  
 </footer>
@@ -109,8 +111,8 @@ export default {
   display: flex;
   align-items: center;
   .item{
-    width: calc(100% / 4 - 40px);
-    margin: 0 20px;
+    width: calc(100% / 4 - 20px);
+    margin: 0 10px;
     .logoFooter{
       height: 59px;
     }
@@ -129,6 +131,13 @@ export default {
     border: none;
     padding: 11px 40px;
     background-color: $brightSun;
+    &:hover{
+    background-color: white;
+    transition: all .5s linear;
+    }
+    &:hover a{
+      color: $doveGray;
+    }
     a{
       letter-spacing: 0.1rem;
       color:$doveGray ;
