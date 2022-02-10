@@ -9,8 +9,16 @@
           <div class="iconContainer"><i :class=(element.icon)></i></div>
           <h2>{{element.title}}</h2>
           <p>{{element.text}}</p>
+          <div class="hoverCard">
+            <div class="hoverCradContainer">
+              <div class="titleHover">{{element.titlehover}}</div>
+              <p class="textHover">{{element.text}}</p>
+              <button><a href="#">Get Quote</a></button>
+            </div>
+          </div>
         </div>
       </div>
+      
       <FirstCurvedImgItems/>
      
     </section>
@@ -27,22 +35,26 @@ export default {
         {
           icon:"far fa-building",
           title:"Buildings",
-          text:"Quis autem vel eum iure reprodent qui in ea voluptate velit esse quam nihit molestiae consequatu"
+          text:"Quis autem vel eum iure reprodent qui in ea voluptate velit esse quam nihit molestiae consequatu",
+          titlehover:"Artfully crafted"
         },
         {
           icon:"fas fa-sync-alt",
           title:"Renovate",
-          text:"Quis autem vel eum iure reprodent qui in ea voluptate velit esse quam nihit molestiae consequatu"
+          text:"Quis autem vel eum iure reprodent qui in ea voluptate velit esse quam nihit molestiae consequatu",
+          titlehover:"Artfully crafted"
         },
         {
           icon:"fas fa-home",
           title:"Construct",
-          text:"Quis autem vel eum iure reprodent qui in ea voluptate velit esse quam nihit molestiae consequatu"
+          text:"Quis autem vel eum iure reprodent qui in ea voluptate velit esse quam nihit molestiae consequatu",
+          titlehover:"Artfully crafted"
         },
         {
           icon:"fas fa-truck",
           title:"Exclusive",
-          text:"Quis autem vel eum iure reprodent qui in ea voluptate velit esse quam nihit molestiae consequatu"
+          text:"Quis autem vel eum iure reprodent qui in ea voluptate velit esse quam nihit molestiae consequatu",
+          titlehover:"Artfully crafted"
         }
       ]
     }
@@ -106,6 +118,57 @@ h3{
   padding: 23px;
   border-radius: 5px;
   color: $doveGray;
+  position: relative;
+    
+    &:hover .hoverCard{
+      transition: all .7s linear;
+      visibility: visible;
+    }
+  .hoverCard{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $sun;
+    visibility: hidden;
+    .hoverCradContainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      .titleHover{
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+      .textHover{
+        font-size: 17px;
+        font-weight: 300;
+        margin-top: 20px;
+      }
+    }
+    
+    button{
+      background-color: #f7dd8a;
+      border: none;
+      width: 132px;
+      height: 33px;
+      margin-left: 10px;
+      &:hover{
+        background-color: black;
+        transition: all .5s linear;
+      }
+      &:hover a{
+        color: white;
+      }
+      a{
+        text-decoration: none;
+        color:$doveGray; 
+        text-transform:uppercase;
+      }
+    }
+  }
+
   .iconContainer{
     color: $doveGray;
     width: 30px;
@@ -125,7 +188,6 @@ h3{
     text-align: center;
   }
 }
-
 
 
 
