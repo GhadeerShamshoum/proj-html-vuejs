@@ -1,19 +1,23 @@
 <template>
     <section>    
-      <h3>Exploree recent work</h3>
+      <h3>Explore recent work</h3>
       <div class="textContainer">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptate amet suscipit architecto libero, placeat dolor iusto voluptates voluptatum labore esse voluptatem ea quisquam repellendus aliquid consequatur, error vero alias?</p>
       </div>
       <div class="containerPics">
-        <div class="listContainer">
-          <img src="../../assets/img/project2-featured-15013609.jpg" alt="">   
+        <div v-for="(element, index) in images" :key="index" class="listContainer">
+          <img :src="require('../../assets/img/'+element.image+'.jpg') " alt="">  
+          <div class="cardHover">
+            <div class="hoverItemsCard">
+              <div class="searchLink">
+                <div class="linki"><i class="linkIcon fa-solid fa-link"></i></div>
+                <div class="searchi"><i class="searchIcon fa-solid fa-magnifying-glass"></i></div>
+              </div>
+              <div class="florida">Florida Health Facility</div>
+              <div class="commercial">Commercial</div>
+            </div>
+          </div> 
         </div>
-        <div class="listContainer">
-          <img src="../../assets/img/project1-featured-294276386.jpg" alt="">   
-        </div>
-        <div class="listContainer">
-          <img src="../../assets/img/project3-featured-189023420.jpg" alt="">   
-        </div> 
       </div>
       <div class="viewAllPro">View all projects</div>   
       <div class="ourCoreValues">
@@ -35,8 +39,21 @@ import OurCoreImg from '../commons/OurCoreImg.vue'
 
 export default {
   name: 'EploreRecentWork',
- 
-
+  data(){
+    return{
+      images:[
+        {
+          image: "project2-featured-15013609"
+        },
+        {
+          image: "project1-featured-294276386"
+        },
+        {
+          image: "project3-featured-189023420"
+        },
+      ]
+    }
+  },
   
   props: {
     
@@ -132,6 +149,57 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+    &:hover{
+      transition: all 2s linear;
+    }
+    &:hover .cardHover{
+      display: block;
+    }
+    .cardHover{
+      position: absolute;
+      top:0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+       background-color: $brightSun;
+       display: none;
+       .hoverItemsCard{
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         .searchLink{
+           display: flex;
+           .searchi,
+           .linki{
+             height: 50px;
+             width: 50px;
+             background-color: white;
+             border-radius: 50%;
+             margin: 10px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             .searchIcon,
+             .linkIcon{
+               color: $sun;
+             }
+            
+           }
+         }
+          .florida{
+            font-size: 15px;
+            color:white;
+          }
+          .commercial{
+            font-size: 12px;
+            color:white
+          }
+       }
+    }
     
     img{
       width: 100%;
