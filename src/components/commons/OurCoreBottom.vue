@@ -71,6 +71,12 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    &:hover .coloredIcon{
+    background-color: $sun;
+    }
+    &:hover h4{
+    color: $sun;
+    }
     h4{
       color: $doveGray;
       padding: 20px 0;
@@ -100,9 +106,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  &:hover{
-    background-color: $sun;
-  }
+  
 }
 .icon{
   color: $white;
