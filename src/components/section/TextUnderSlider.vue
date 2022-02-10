@@ -42,9 +42,19 @@ export default {
     bottom:-15px;
     border: 1px solid white;
     background-color: $LimedSpruce;
-    padding: 5px 10px;
+    padding: 5px 30px;
+    &:hover{
+    background-color: $white;
+    transition: all .5s linear;
+    border:2px solid black;
+    }
+    &:hover a{
+      color: $doveGray;
+    }
     a{
       color: $white;
+      font-size: 12px;
+      letter-spacing: 0.1rem;
     }
   }
 }
