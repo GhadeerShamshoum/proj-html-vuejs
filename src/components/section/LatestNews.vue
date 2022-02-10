@@ -112,60 +112,61 @@ h3{
     .card{
         width: calc(100% / 3 - 20px);
         margin: 0 10px;
+        position: relative;
+        &:hover .hoverCrad{
+          display: block;
+        }
+         .hoverCrad{
+            position: absolute;
+            top:0;
+            right: 0;
+            width: 100%;
+            height: 200px;
+            background-color: $brightSun;
+            display: none;
+            .hoverItemsCard{
+              height: 100%;
+              padding: 40px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              .searchLink{
+                display: flex;
+                .searchi,
+                .linki{
+                  height: 50px;
+                  width: 50px;
+                  background-color: white;
+                  border-radius: 50%;
+                  margin: 10px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  .searchIcon,
+                  .linkIcon{
+                    color: $sun;
+                  }
+          
+          }
+        }
+        .florida{
+          font-size: 15px;
+          color:white;
+          text-align: center;
+        }
+        .commercial{
+          font-size: 10px;
+          text-align: center;
+          color:white;
+          margin: auto;
+        }
+              }
+        }
         .imageContainer{
             width: 100%;
             height: 200px;
-            position: relative;
-            &:hover .hoverCrad{
-              display: block;
-            }
-            .hoverCrad{
-              position: absolute;
-              top:0;
-              right: 0;
-              width: 100%;
-              height: 100%;
-              background-color: $brightSun;
-              display: none;
-              .hoverItemsCard{
-                height: 100%;
-                padding: 40px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                .searchLink{
-                  display: flex;
-                  .searchi,
-                  .linki{
-                    height: 50px;
-                    width: 50px;
-                    background-color: white;
-                    border-radius: 50%;
-                    margin: 10px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    .searchIcon,
-                    .linkIcon{
-                      color: $sun;
-                    }
-            
-           }
-         }
-          .florida{
-            font-size: 15px;
-            color:white;
-            text-align: center;
-          }
-          .commercial{
-            font-size: 10px;
-            text-align: center;
-            color:white;
-            margin: auto;
-          }
-       }
-    }
+           
             img{
                 width: 100%;
             }
