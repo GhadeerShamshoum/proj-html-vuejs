@@ -103,6 +103,14 @@ button{
   border: none;
   width: 132px;
   height: 33px;
+  margin-left: 10px;
+  &:hover{
+    background-color: black;
+    transition: all .5s linear;
+  }
+  &:hover a{
+    color: white;
+  }
   a{
     text-decoration: none;
     color:$doveGray; 
