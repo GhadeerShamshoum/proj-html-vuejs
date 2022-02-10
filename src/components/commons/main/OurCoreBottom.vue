@@ -59,7 +59,7 @@ export default {
 
 
 <style scoped lang="scss">
-@import "../../assets/style/variabiles.scss";
+@import "../../../assets/style/variabiles.scss";
 
 .ourCoreBottom{
   width: 1000px;

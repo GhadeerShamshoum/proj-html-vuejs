@@ -34,8 +34,8 @@
 </template>
 
 <script>
-import OurCoreBottom from '../../commons/OurCoreBottom.vue'
-import OurCoreImg from '../../commons/OurCoreImg.vue'
+import OurCoreBottom from '../../commons/main/OurCoreBottom.vue'
+import OurCoreImg from '../../commons/main/OurCoreImg.vue'
 
 export default {
   name: 'EploreRecentWork',

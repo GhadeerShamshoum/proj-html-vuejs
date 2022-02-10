@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import Logo from './commons/Logo.vue'
-import Menu from './commons/Menu.vue'
+import Logo from './commons/header/Logo.vue'
+import Menu from './commons/header/Menu.vue'
 export default {
   name: 'Header',
   props: {

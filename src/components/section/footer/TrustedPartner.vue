@@ -6,7 +6,7 @@
       </div>
       <div class="partnersContainer">
         <div class="imgcontainer" v-for="(element, index) in sponsers" :key="index" >
-          <img :src="require('../../assets/img/sponsers/'+element.image+'.png') " alt="">
+          <img :src="require('../../../assets/img/sponsers/'+element.image+'.png') " alt="">
         </div>
       </div>
       
@@ -54,7 +54,7 @@ export default {
 
 
 <style scoped lang="scss">
-@import "../../assets/style/variabiles.scss";
+@import "../../../assets/style/variabiles.scss";
 section{
   display: flex;
   flex-direction: column;

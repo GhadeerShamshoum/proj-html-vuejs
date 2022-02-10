@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import FirstCurvedImgItems from '../../commons/FirstCurvedImgItems.vue'
+import FirstCurvedImgItems from '../../commons/main/FirstCurvedImgItems.vue'
 
 export default {
   name: 'SpeciaList',

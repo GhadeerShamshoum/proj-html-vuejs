@@ -57,14 +57,14 @@ export default {
 
 
 <style scoped lang="scss">
-@import "../../assets/style/variabiles.scss";
+@import "../../../assets/style/variabiles.scss";
 
 
 .imgContainer{
   width: 100%;
   height: 600px;
   position: relative;
-  background-image: url('../../assets/img/home-244125289.jpg');
+  background-image: url('../../../assets/img/home-244125289.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

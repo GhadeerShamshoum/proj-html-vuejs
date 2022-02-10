@@ -18,7 +18,7 @@ import TextUnderSlider from './section/main/TextUnderSlider.vue'
 import SpeciaList from './section/main/SpeciaList.vue'
 import EploreRecentWork from './section/main/EploreRecentWork.vue'
 import LatestNews from './section/main/LatestNews.vue'
-import TrustedPartner from './section/TrustedPartner.vue'
+
 export default {
   name: 'Main',
   props: {
@@ -30,7 +30,7 @@ export default {
     SpeciaList,
     EploreRecentWork,
     LatestNews,
-    TrustedPartner
+    
   }
 }
 </script>

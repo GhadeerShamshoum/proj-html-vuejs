@@ -3,7 +3,7 @@
         <div class="bendTop"></div>
         <div class="container">
           <h3>Our home owners say</h3>
-          <img src="../../assets/img/home-testimonial-113165296.jpg" alt="">
+          <img src="../../../assets/img/home-testimonial-113165296.jpg" alt="">
           <p>"No man but feels more of a man in the world if he have but a bit of ground that he can call his own. However small it is on the surface, it is four thousand miles deep: and that is a very handsome property"</p>
           <p class="nameAuthor">HARRY SMITH-NEW HOME OWNER</p>
          
@@ -29,7 +29,7 @@ export default {
 
 
 <style scoped lang="scss">
-@import "../../assets/style/variabiles.scss";
+@import "../../../assets/style/variabiles.scss";
 .container{
   flex-direction: column;
   align-items: center;
@@ -71,7 +71,7 @@ export default {
   width: 100%;
   height: 798px;
   position: relative;
-  background-image: url('../../assets/img/home-parallax-144609983.jpg');
+  background-image: url('../../../assets/img/home-parallax-144609983.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
