@@ -5,25 +5,10 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptate amet suscipit architecto libero, placeat dolor iusto voluptates voluptatum labore esse voluptatem ea quisquam repellendus aliquid consequatur, error vero alias?</p>
       </div>
       <div class="container">
-        <div class="listContainer">
-          <div class="iconContainer"><i class="far fa-building"></i></div>
-          <h2>Buildings</h2>
-          <p>Quis autem vel eum iure reprodent qui in ea voluptate velit esse quam nihit molestiae consequatu</p>
-        </div>
-        <div class="listContainer">
-          <div class="iconContainer"><i class="fas fa-sync-alt"></i></div>
-          <h2>Renovate</h2>
-          <p>Quis autem vel eum iure reprodent qui in ea voluptate velit esse quam nihit molestiae consequatu</p>
-        </div>
-        <div class="listContainer">
-          <div class="iconContainer"><i class="fas fa-home"></i></div>
-          <h2>Construct</h2>
-          <p>Quis autem vel eum iure reprodent qui in ea voluptate velit esse quam nihit molestiae consequatu</p>
-        </div>
-        <div class="listContainer">
-          <div class="iconContainer"><i class="fas fa-truck"></i></div>
-          <h2>Exclusive</h2>
-          <p>Quis autem vel eum iure reprodent qui in ea voluptate velit esse quam nihit molestiae consequatu</p>
+        <div v-for="(element, index) in list" :key="index" class="listContainer">
+          <div class="iconContainer"><i :class=(element.icon)></i></div>
+          <h2>{{element.title}}</h2>
+          <p>{{element.text}}</p>
         </div>
       </div>
       <FirstCurvedImgItems/>
@@ -36,6 +21,32 @@ import FirstCurvedImgItems from '../commons/FirstCurvedImgItems.vue'
 
 export default {
   name: 'SpeciaList',
+  data(){
+    return{
+      list:[
+        {
+          icon:"far fa-building",
+          title:"Buildings",
+          text:"Quis autem vel eum iure reprodent qui in ea voluptate velit esse quam nihit molestiae consequatu"
+        },
+        {
+          icon:"fas fa-sync-alt",
+          title:"Renovate",
+          text:"Quis autem vel eum iure reprodent qui in ea voluptate velit esse quam nihit molestiae consequatu"
+        },
+        {
+          icon:"fas fa-home",
+          title:"Construct",
+          text:"Quis autem vel eum iure reprodent qui in ea voluptate velit esse quam nihit molestiae consequatu"
+        },
+        {
+          icon:"fas fa-truck",
+          title:"Exclusive",
+          text:"Quis autem vel eum iure reprodent qui in ea voluptate velit esse quam nihit molestiae consequatu"
+        }
+      ]
+    }
+  },
 
   
   props: {
@@ -78,6 +89,7 @@ h3{
 
 .textContainer{
   width: 850px;
+  margin: 20px 0;
   p{
     font-weight: 100px;
     color: $doveGray;
