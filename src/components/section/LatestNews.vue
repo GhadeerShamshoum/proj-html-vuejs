@@ -8,6 +8,16 @@
           <div v-for="(element, index) in lastnews" :key="index" class="card">
               <div class="imageContainer">
                 <img :src="require('../../assets/img/blog/'+element.image+'.jpg') " alt="">
+              <div class="hoverCrad">
+                <div class="hoverItemsCard">
+                  <div class="searchLink">
+                    <div class="linki"><i class="linkIcon fa-solid fa-link"></i></div>
+                    <div class="searchi"><i class="searchIcon fa-solid fa-magnifying-glass"></i></div>
+                  </div>
+                  <div class="florida">{{element.title}}</div>
+                  <div class="commercial">Architecture, Buildings, Constructions, News</div>
+                </div>
+              </div>
               </div>
               <div class="textUnderPic">
                 <h4 class="title">{{element.title}}</h4>
@@ -105,6 +115,57 @@ h3{
         .imageContainer{
             width: 100%;
             height: 200px;
+            position: relative;
+            &:hover .hoverCrad{
+              display: block;
+            }
+            .hoverCrad{
+              position: absolute;
+              top:0;
+              right: 0;
+              width: 100%;
+              height: 100%;
+              background-color: $brightSun;
+              display: none;
+              .hoverItemsCard{
+                height: 100%;
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .searchLink{
+                  display: flex;
+                  .searchi,
+                  .linki{
+                    height: 50px;
+                    width: 50px;
+                    background-color: white;
+                    border-radius: 50%;
+                    margin: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .searchIcon,
+                    .linkIcon{
+                      color: $sun;
+                    }
+            
+           }
+         }
+          .florida{
+            font-size: 15px;
+            color:white;
+            text-align: center;
+          }
+          .commercial{
+            font-size: 10px;
+            text-align: center;
+            color:white;
+            margin: auto;
+          }
+       }
+    }
             img{
                 width: 100%;
             }
