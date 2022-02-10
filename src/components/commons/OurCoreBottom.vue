@@ -100,6 +100,9 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  &:hover{
+    background-color: $sun;
+  }
 }
 .icon{
   color: $white;
