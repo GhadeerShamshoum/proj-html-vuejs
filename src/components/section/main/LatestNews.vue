@@ -114,8 +114,8 @@ h3{
         margin: 0 10px;
         position: relative;
         &:hover .hoverCrad{
+          transition-duration: .8s ;
           display: block;
-          transition: all .8s linear;
         }
          .hoverCrad{
             position: absolute;
